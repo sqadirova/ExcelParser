@@ -1,19 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9351d668-267b-4193-a0b2-d240a5470ce7" name="Default Changelist" comment="" />
+    <list default="true" id="9351d668-267b-4193-a0b2-d240a5470ce7" name="Default Changelist" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/parserController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/parseRouters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/43a8d408ec59cf742fa1fa75673fa16b" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/daee69d679515da2d5b26442d2b1e092" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/6662e085f05ce1627aee2f7ade235ecc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/7452f13daf9ff61f35854f512a4b059f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/754ac072b28e4a2fdb34937d86ffec97" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/9f2fdedd210dce0a1be6d9e98c19e7df" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/ada3f72625e04d1f5912a3acee3dba97" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/c223e23e9ef2d18d18fd842ac887fcc4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/e252efeb90d70870f11261b706a503f0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/e4873cf2f3e0041fd2b81e2493a521b8" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1jpBkyGuelyabo4T8vX04wr9xZZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../devcamper_project_resources" />
@@ -46,37 +79,73 @@
       <workItem from="1604493542789" duration="601000" />
       <workItem from="1604558622694" duration="11062000" />
       <workItem from="1604643471758" duration="4351000" />
-      <workItem from="1604989222198" duration="6217000" />
+      <workItem from="1604989222198" duration="15132000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1604995953571</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604995953571</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="525" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604989881117">
+    <state x="525" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605000680653">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="525" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1604989881117" />
+    <state x="525" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1605000680653" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1604651121167">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604651121167" />
-    <state width="1515" height="197" key="GridCell.Tab.0.bottom" timestamp="1604995304366">
+    <state x="647" y="310" key="Github.ShareDialog" timestamp="1604996786435">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="197" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604995304366" />
-    <state width="1515" height="197" key="GridCell.Tab.0.center" timestamp="1604995304366">
+    <state x="647" y="310" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1604996786435" />
+    <state width="1515" height="197" key="GridCell.Tab.0.bottom" timestamp="1605003408716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="197" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604995304366" />
-    <state width="1515" height="197" key="GridCell.Tab.0.left" timestamp="1604995304366">
+    <state width="1515" height="197" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605003408716" />
+    <state width="1515" height="197" key="GridCell.Tab.0.center" timestamp="1605003408716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="197" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604995304366" />
-    <state width="1515" height="197" key="GridCell.Tab.0.right" timestamp="1604995304366">
+    <state width="1515" height="197" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605003408716" />
+    <state width="1515" height="197" key="GridCell.Tab.0.left" timestamp="1605003408716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="197" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604995304366" />
+    <state width="1515" height="197" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605003408716" />
+    <state width="1515" height="197" key="GridCell.Tab.0.right" timestamp="1605003408716">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="197" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605003408716" />
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1604996705463">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604996705463" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604995843113">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1604995843113" />
   </component>
 </project>
