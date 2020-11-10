@@ -39,7 +39,10 @@ app.post('/profile', upload.single('avatar'), function (req, res) {
     const res_test= XLSX.utils.sheet_to_json(test)
     const res_riskFactors= XLSX.utils.sheet_to_json(risk_factors)
 
+    const obj= {
+        res_general,res_test,res_riskFactors
+    }
 
-    res.send()
+    res.send(obj)
 
 })
