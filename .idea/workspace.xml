@@ -10,21 +10,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9351d668-267b-4193-a0b2-d240a5470ce7" name="Default Changelist" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/parserController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/parseRouters.js" afterDir="false" />
+    <list default="true" id="9351d668-267b-4193-a0b2-d240a5470ce7" name="Default Changelist" comment=".gitignore added">
+      <change afterPath="$PROJECT_DIR$/config/config.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/db.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/43a8d408ec59cf742fa1fa75673fa16b" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/daee69d679515da2d5b26442d2b1e092" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/6662e085f05ce1627aee2f7ade235ecc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/7452f13daf9ff61f35854f512a4b059f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/754ac072b28e4a2fdb34937d86ffec97" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/9f2fdedd210dce0a1be6d9e98c19e7df" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/ada3f72625e04d1f5912a3acee3dba97" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/c223e23e9ef2d18d18fd842ac887fcc4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/e252efeb90d70870f11261b706a503f0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/e4873cf2f3e0041fd2b81e2493a521b8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/parserController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/parserController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/2d98c035b2b179c75ca8176c1d3070ef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/df36c6834f1aaf420cb11b04c7598578" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +73,9 @@
       <workItem from="1604493542789" duration="601000" />
       <workItem from="1604558622694" duration="11062000" />
       <workItem from="1604643471758" duration="4351000" />
-      <workItem from="1604989222198" duration="15132000" />
+      <workItem from="1604989222198" duration="20654000" />
+      <workItem from="1605078544658" duration="3777000" />
+      <workItem from="1605082608409" duration="4681000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1604995953571</created>
@@ -88,7 +84,28 @@
       <option name="project" value="LOCAL" />
       <updated>1604995953571</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Error: no such file or director">
+      <created>1605007803448</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605007803448</updated>
+    </task>
+    <task id="LOCAL-00003" summary="problem fixed">
+      <created>1605012550673</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605012550673</updated>
+    </task>
+    <task id="LOCAL-00004" summary=".gitignore added">
+      <created>1605012695836</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605012695836</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,11 +121,15 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Error: no such file or director" />
+    <MESSAGE value="problem fixed" />
+    <MESSAGE value=".gitignore added" />
+    <option name="LAST_COMMIT_MESSAGE" value=".gitignore added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605000680653">
@@ -123,29 +144,29 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="647" y="310" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1604996786435" />
-    <state width="1515" height="197" key="GridCell.Tab.0.bottom" timestamp="1605003408716">
+    <state width="1515" height="197" key="GridCell.Tab.0.bottom" timestamp="1605082336788">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="197" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605003408716" />
-    <state width="1515" height="197" key="GridCell.Tab.0.center" timestamp="1605003408716">
+    <state width="1515" height="197" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605082336788" />
+    <state width="1515" height="197" key="GridCell.Tab.0.center" timestamp="1605082336788">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="197" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605003408716" />
-    <state width="1515" height="197" key="GridCell.Tab.0.left" timestamp="1605003408716">
+    <state width="1515" height="197" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605082336788" />
+    <state width="1515" height="197" key="GridCell.Tab.0.left" timestamp="1605082336788">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="197" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605003408716" />
-    <state width="1515" height="197" key="GridCell.Tab.0.right" timestamp="1605003408716">
+    <state width="1515" height="197" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605082336788" />
+    <state width="1515" height="197" key="GridCell.Tab.0.right" timestamp="1605082336788">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="197" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605003408716" />
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1604996705463">
+    <state width="1515" height="197" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605082336788" />
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1605012698014">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604996705463" />
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604995843113">
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605012698014" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605009823507">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1604995843113" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1605009823507" />
   </component>
 </project>

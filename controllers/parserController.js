@@ -1,30 +1,33 @@
 const XLSX = require('xlsx')
 
 exports.getAllInfo=(req,res)=>{
-    console.log(req.file);
+    try{
+        let excelFile = XLSX.readFile(__dirname + '/../uploads/'+req.file.filename, {
+            cellDates:true
+        })
 
-    let excelFile = XLSX.readFile(__dirname + '/../uploads/'+req.file.filename, {
-        cellDates:true
-    })
+        const sheetNames = excelFile.SheetNames;
+        console.log(sheetNames);
 
-    const sheetNames = excelFile.SheetNames;
-    console.log(sheetNames);
+        const general = excelFile.Sheets['General']
+        const test=excelFile.Sheets['Tests']
+        const risk_factors=excelFile.Sheets['Risk Factors']
 
-    const general = excelFile.Sheets['General']
-    const test=excelFile.Sheets['Tests']
-    const risk_factors=excelFile.Sheets['Risk Factors']
+        const res_general= XLSX.utils.sheet_to_json(general)
+        const res_test= XLSX.utils.sheet_to_json(test)
+        const res_riskFactors= XLSX.utils.sheet_to_json(risk_factors)
 
-    const res_general= XLSX.utils.sheet_to_json(general)
-    const res_test= XLSX.utils.sheet_to_json(test)
-    const res_riskFactors= XLSX.utils.sheet_to_json(risk_factors)
+        const excel_info= {
+            res_general,
+            res_test,
+            res_riskFactors
+        }
 
-    const excel_info= {
-        res_general,
-        res_test,
-        res_riskFactors
+        res.send(excel_info)
+    }catch (err) {
+        res.status(404).json({ error: err.toString(),
+                                     message: 'File not found'})
     }
-
-    res.send(excel_info)
 };
 
 
