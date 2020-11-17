@@ -2,6 +2,7 @@ const Sportsman=require('../models/Sportsman')
 const Tests=require('../models/Tests')
 const RiskFactors=require('../models/RiskFactors')
 const XLSX = require('xlsx')
+const ErrorResponse=require('../utils/errorResponse')
 
 
 //@desc Create new sportsmen
@@ -11,6 +12,10 @@ exports.postGeneral=async (req,res,next)=>{
         let excelFile = XLSX.readFile(__dirname + '/../uploads/'+req.file.filename, {
             cellDates:true
         });
+
+        if (!excelFile){
+            return next(new ErrorResponse('File not found!!!',404));
+        }
 
         const general = excelFile.Sheets['General'];
         const res_general= XLSX.utils.sheet_to_json(general);
@@ -22,8 +27,7 @@ exports.postGeneral=async (req,res,next)=>{
             data: tableGeneral
         });
     }catch (err) {
-        res.status(400).json({success:false,
-                                    error: err.toString()});
+        next(err);
     }
 }
 
@@ -35,6 +39,10 @@ exports.postTests=async (req,res,next)=>{
         let excelFile = XLSX.readFile(__dirname + '/../uploads/'+req.file.filename, {
             cellDates:true
         });
+
+        if (!excelFile){
+            return next(new ErrorResponse('File not found!!!',404));
+        }
 
         const tests = excelFile.Sheets['Tests'];
         const res_tests= XLSX.utils.sheet_to_json(tests);
@@ -48,8 +56,7 @@ exports.postTests=async (req,res,next)=>{
             data: tableTests
         });
     }catch (err) {
-        res.status(400).json({success:false,
-            error: err.toString()});
+        next(err);
     }
 }
 
@@ -60,6 +67,10 @@ exports.postRiskFactors=async (req,res,next)=>{
         let excelFile = XLSX.readFile(__dirname + '/../uploads/'+req.file.filename, {
             cellDates:true
         });
+
+        if (!excelFile){
+            return next(new ErrorResponse('File not found!!!',404));
+        }
 
         const riskFactors = excelFile.Sheets['Risk Factors'];
         const res_riskFactors= XLSX.utils.sheet_to_json(riskFactors);
@@ -73,18 +84,10 @@ exports.postRiskFactors=async (req,res,next)=>{
             data: tableRiskFactors
         });
     }catch (err) {
-        res.status(400).json({success:false,
-            error: err.toString()});
+        next(err);
     }
 
 }
-
-
-
-
-
-
-
 
 
 
