@@ -4,17 +4,21 @@ const multer = require('multer')
 const router=express.Router()
 
 const {  postGeneral,
-         postTests
+         postTests,
+         postRiskFactors
 } =require('../controllers/SportsmanController')
 
 
 const upload = multer({dest: './uploads/'});
 
 router.route('/general')
-    .post(upload.single("avatar"),postGeneral);
+    .post(upload.single("excel"),postGeneral);
 
 router.route('/tests')
-    .post(upload.single("avatar"),postTests);
+    .post(upload.single("excel"),postTests);
+
+router.route('/riskFactors')
+    .post(upload.single("excel"),postRiskFactors);
 
 module.exports=router;
 

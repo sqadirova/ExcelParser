@@ -10,27 +10,30 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9351d668-267b-4193-a0b2-d240a5470ce7" name="Default Changelist" comment="-- mongoose installed">
-      <change afterPath="$PROJECT_DIR$/ImportExcel/importExcelFile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/SportsmanController.js" afterDir="false" />
+    <list default="true" id="9351d668-267b-4193-a0b2-d240a5470ce7" name="Default Changelist" comment="-- tests">
       <change afterPath="$PROJECT_DIR$/controllers/parserController2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/RiskFactors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/Sportsman.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/Tests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/40398b6bf5d98baf01c5b6223a88724b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/47274e0aecbbad1e5ded2de39d545d73" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/53c061ddc4277a3460f94c6e457e38f0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/5dc199b0addc1f1b4d040e2c40ea95db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/66a221750cca0aba2edb1e0d81a95986" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/uploads/75251eb5068499748baf20f2ad6912d5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/7b3f6bb338b5531db4b4ccbae4260900" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/uploads/9d1ccb521764e01ecc1d4e6e8b4188b4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/9f690d0120bd524763797a7a87b68d3f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/9fd79ea26db0cecb568393bf1cb907ac" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/b353a7b4373b7a9d0b37d7ff167a98a8" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/uploads/c44d377de362f9ea5e97409d1a7a41e2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/d453955c6f8b3176f36e7318ca1ef0ef" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/uploads/e22909e0da907921a1d4e5a7f6994767" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.env" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/SportsmanController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/SportsmanController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/parserController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/parserController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/RiskFactors.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/RiskFactors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Tests.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/parseRouters.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/parseRouters.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/2d98c035b2b179c75ca8176c1d3070ef" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/0a05a8beefd114cc38f172139c5ed97f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/df36c6834f1aaf420cb11b04c7598578" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/5dc199b0addc1f1b4d040e2c40ea95db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/2d98c035b2b179c75ca8176c1d3070ef" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/08cc387a5875ecc21d57f00f7fccc5f7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/df36c6834f1aaf420cb11b04c7598578" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/0a05a8beefd114cc38f172139c5ed97f" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +95,7 @@
       <workItem from="1605251542497" duration="15117000" />
       <workItem from="1605446953738" duration="8847000" />
       <workItem from="1605551778081" duration="2613000" />
-      <workItem from="1605598411861" duration="2456000" />
+      <workItem from="1605598411861" duration="4798000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1604995953571</created>
@@ -129,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605097267406</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="-- tests">
+      <created>1605601018036</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605601018036</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,7 +164,8 @@
     <MESSAGE value="problem fixed" />
     <MESSAGE value=".gitignore added" />
     <MESSAGE value="-- mongoose installed" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- mongoose installed" />
+    <MESSAGE value="-- tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605000680653">
@@ -169,30 +180,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="647" y="310" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1604996786435" />
-    <state width="1515" height="230" key="GridCell.Tab.0.bottom" timestamp="1605463218686">
+    <state width="1515" height="230" key="GridCell.Tab.0.bottom" timestamp="1605603398333">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="230" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605463218686" />
-    <state width="1515" height="230" key="GridCell.Tab.0.center" timestamp="1605463218686">
+    <state width="1515" height="230" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605603398333" />
+    <state width="1515" height="230" key="GridCell.Tab.0.center" timestamp="1605603398333">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="230" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605463218686" />
-    <state width="1515" height="230" key="GridCell.Tab.0.left" timestamp="1605463218686">
+    <state width="1515" height="230" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605603398333" />
+    <state width="1515" height="230" key="GridCell.Tab.0.left" timestamp="1605603398333">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="230" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605463218686" />
-    <state width="1515" height="230" key="GridCell.Tab.0.right" timestamp="1605463218686">
+    <state width="1515" height="230" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605603398333" />
+    <state width="1515" height="230" key="GridCell.Tab.0.right" timestamp="1605603398333">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="230" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605463218686" />
+    <state width="1515" height="230" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605603398333" />
     <state x="583" y="115" key="RollbackChangesDialog" timestamp="1605184266940">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="583" y="115" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605184266940" />
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1605097379059">
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1605601022380">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605097379059" />
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605601022380" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605009823507">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -201,5 +212,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="70" y="67" width="1266" height="552" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1605460697240" />
+    <state x="478" y="11" width="579" height="801" key="find.popup" timestamp="1605602045811">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="478" y="11" width="579" height="801" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1605602045811" />
   </component>
 </project>

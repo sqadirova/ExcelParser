@@ -1,5 +1,6 @@
 const Sportsman=require('../models/Sportsman')
 const Tests=require('../models/Tests')
+const RiskFactors=require('../models/RiskFactors')
 const XLSX = require('xlsx')
 
 
@@ -37,12 +38,10 @@ exports.postTests=async (req,res,next)=>{
 
         const tests = excelFile.Sheets['Tests'];
         const res_tests= XLSX.utils.sheet_to_json(tests);
-        res_tests.sportsmenID='5fb16536a38c9e10bc95ffd7';
 
         console.log(res_tests);
 
         const tableTests=await Tests.create(res_tests);
-
 
         res.status(201).json({
             success: true,
@@ -52,6 +51,32 @@ exports.postTests=async (req,res,next)=>{
         res.status(400).json({success:false,
             error: err.toString()});
     }
+}
+
+//@desc Create risk factors for sportsmen
+//@route POST /riskFactors
+exports.postRiskFactors=async (req,res,next)=>{
+    try {
+        let excelFile = XLSX.readFile(__dirname + '/../uploads/'+req.file.filename, {
+            cellDates:true
+        });
+
+        const riskFactors = excelFile.Sheets['Risk Factors'];
+        const res_riskFactors= XLSX.utils.sheet_to_json(riskFactors);
+
+        console.log(res_riskFactors);
+
+        const tableRiskFactors=await RiskFactors.create(res_riskFactors);
+
+        res.status(201).json({
+            success: true,
+            data: tableRiskFactors
+        });
+    }catch (err) {
+        res.status(400).json({success:false,
+            error: err.toString()});
+    }
+
 }
 
 
