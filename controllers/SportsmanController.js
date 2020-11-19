@@ -2,13 +2,14 @@ const Sportsman=require('../models/Sportsman')
 const Tests=require('../models/Tests')
 const RiskFactors=require('../models/RiskFactors')
 const XLSX = require('xlsx')
+const asyncHandler=require('../middleware/async')
 const ErrorResponse=require('../utils/errorResponse')
 
 
 //@desc Create new sportsmen
 //@route POST /general
-exports.postGeneral=async (req,res,next)=>{
-    try {
+exports.postGeneral=asyncHandler(async (req,res,next)=>{
+
         let excelFile = XLSX.readFile(__dirname + '/../uploads/'+req.file.filename, {
             cellDates:true
         });
@@ -26,16 +27,14 @@ exports.postGeneral=async (req,res,next)=>{
             success: true,
             data: tableGeneral
         });
-    }catch (err) {
-        next(err);
-    }
-}
+
+});
 
 
 //@desc Create new test for sportsmen
 //@route POST /tests
-exports.postTests=async (req,res,next)=>{
-    try {
+exports.postTests=asyncHandler(async (req,res,next)=>{
+
         let excelFile = XLSX.readFile(__dirname + '/../uploads/'+req.file.filename, {
             cellDates:true
         });
@@ -55,15 +54,12 @@ exports.postTests=async (req,res,next)=>{
             success: true,
             data: tableTests
         });
-    }catch (err) {
-        next(err);
-    }
-}
+});
 
 //@desc Create risk factors for sportsmen
 //@route POST /riskFactors
-exports.postRiskFactors=async (req,res,next)=>{
-    try {
+exports.postRiskFactors=asyncHandler(async (req,res,next)=>{
+
         let excelFile = XLSX.readFile(__dirname + '/../uploads/'+req.file.filename, {
             cellDates:true
         });
@@ -83,14 +79,44 @@ exports.postRiskFactors=async (req,res,next)=>{
             success: true,
             data: tableRiskFactors
         });
-    }catch (err) {
-        next(err);
+});
+
+//@desc Update sportsmen
+//@route PUT /general/:id
+exports.updateGeneral=asyncHandler(async (req,res,next)=>{
+
+    let sportsmen=await Sportsman.findByIdAndUpdate(req.params.id,{'First Name':'Siddiqa'}, {
+        new:true,
+        runValidators:true
+    });
+
+    if (!sportsmen){
+       return  next(new ErrorResponse(`Sportsmen not found with id of ${req.params.id}`,404));
     }
 
-}
+    res.status(200).json({
+        success: true,
+        data: sportsmen
+    });
 
+});
 
+//@desc Delete sportsmen
+//@route DELETE /general/:id
+exports.deleteGeneral=asyncHandler(async (req,res,next)=>{
 
+    let sportsmen=await Sportsman.findByIdAndDelete(req.params.id);
+
+    if (!sportsmen){
+        return  next(new ErrorResponse(`Sportsmen not found with id of ${req.params.id}`,404));
+    }
+
+    res.status(200).json({
+        success: true,
+        data: sportsmen
+    });
+
+});
 
 
 

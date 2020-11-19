@@ -10,16 +10,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9351d668-267b-4193-a0b2-d240a5470ce7" name="Default Changelist" comment="-- save in db">
-      <change afterPath="$PROJECT_DIR$/middleware/error.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/errorResponse.js" afterDir="false" />
+    <list default="true" id="9351d668-267b-4193-a0b2-d240a5470ce7" name="Default Changelist" comment="-- Error handling done">
+      <change afterPath="$PROJECT_DIR$/middleware/async.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/4f218a8a47e9d3196963cfe863983828" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImportExcel/importExcelFile.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/SportsmanController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/SportsmanController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/parserController.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/2d98c035b2b179c75ca8176c1d3070ef" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/2e94de4f90641f8a2450dfa5ac48928b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/df36c6834f1aaf420cb11b04c7598578" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/error.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/error.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/parseRouters.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/parseRouters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/2d98c035b2b179c75ca8176c1d3070ef" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/2123a8705b18ec5b14572e55e2743aa8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/df36c6834f1aaf420cb11b04c7598578" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/2e94de4f90641f8a2450dfa5ac48928b" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +81,9 @@
       <workItem from="1605251542497" duration="15117000" />
       <workItem from="1605446953738" duration="8847000" />
       <workItem from="1605551778081" duration="2613000" />
-      <workItem from="1605598411861" duration="9684000" />
+      <workItem from="1605598411861" duration="10215000" />
+      <workItem from="1605684734902" duration="3464000" />
+      <workItem from="1605771918964" duration="4472000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1604995953571</created>
@@ -132,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605603486621</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="-- Error handling done">
+      <created>1605616681820</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605616681820</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +168,8 @@
     <MESSAGE value="-- mongoose installed" />
     <MESSAGE value="-- tests" />
     <MESSAGE value="-- save in db" />
-    <option name="LAST_COMMIT_MESSAGE" value="-- save in db" />
+    <MESSAGE value="-- Error handling done" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- Error handling done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605000680653">
@@ -174,30 +184,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="647" y="310" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1604996786435" />
-    <state width="1515" height="230" key="GridCell.Tab.0.bottom" timestamp="1605616164663">
+    <state width="1515" height="230" key="GridCell.Tab.0.bottom" timestamp="1605788663431">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="230" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605616164663" />
-    <state width="1515" height="230" key="GridCell.Tab.0.center" timestamp="1605616164662">
+    <state width="1515" height="230" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605788663431" />
+    <state width="1515" height="230" key="GridCell.Tab.0.center" timestamp="1605788663431">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="230" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605616164662" />
-    <state width="1515" height="230" key="GridCell.Tab.0.left" timestamp="1605616164662">
+    <state width="1515" height="230" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605788663431" />
+    <state width="1515" height="230" key="GridCell.Tab.0.left" timestamp="1605788663431">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="230" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605616164662" />
-    <state width="1515" height="230" key="GridCell.Tab.0.right" timestamp="1605616164663">
+    <state width="1515" height="230" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605788663431" />
+    <state width="1515" height="230" key="GridCell.Tab.0.right" timestamp="1605788663431">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="230" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605616164663" />
+    <state width="1515" height="230" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605788663431" />
     <state x="583" y="115" key="RollbackChangesDialog" timestamp="1605184266940">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="583" y="115" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605184266940" />
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1605603491742">
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1605616684854">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605603491742" />
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605616684854" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605009823507">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

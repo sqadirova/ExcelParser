@@ -5,7 +5,9 @@ const router=express.Router()
 
 const {  postGeneral,
          postTests,
-         postRiskFactors
+         postRiskFactors,
+         updateGeneral,
+    deleteGeneral
 } =require('../controllers/SportsmanController')
 
 
@@ -13,6 +15,10 @@ const upload = multer({dest: './uploads/'});
 
 router.route('/general')
     .post(upload.single("excel"),postGeneral);
+
+router.route('/general/:id')
+.put(updateGeneral)
+    .delete(deleteGeneral);
 
 router.route('/tests')
     .post(upload.single("excel"),postTests);
