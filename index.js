@@ -11,15 +11,16 @@ connectDB();
 
 //Route files
 const routers=require('./routes/parseRouters')
+const auth=require('./routes/authRouter')
 
 const app = express()
 
 //Body Parser
-// app.use(express.json())
-
+app.use(express.json())
 
 //Mount Router
-app.use('/',routers)
+app.use('/excel',routers)
+app.use('/auth',auth)
 
 //error handler
 // app.use(function (err, req, res, next) {
@@ -35,3 +36,4 @@ app.listen(
     PORT,
     console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`)
 );
+

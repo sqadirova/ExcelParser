@@ -85,7 +85,7 @@ exports.postRiskFactors=asyncHandler(async (req,res,next)=>{
 //@route PUT /general/:id
 exports.updateGeneral=asyncHandler(async (req,res,next)=>{
 
-    let sportsmen=await Sportsman.findByIdAndUpdate(req.params.id,{'First Name':'Siddiqa'}, {
+    let sportsmen=await Sportsman.findByIdAndUpdate(req.params.id,req.body, {
         new:true,
         runValidators:true
     });
@@ -105,11 +105,13 @@ exports.updateGeneral=asyncHandler(async (req,res,next)=>{
 //@route DELETE /general/:id
 exports.deleteGeneral=asyncHandler(async (req,res,next)=>{
 
-    let sportsmen=await Sportsman.findByIdAndDelete(req.params.id);
+    let sportsmen=await Sportsman.findByIdAndDelete(req.params.id);    //findById()
 
     if (!sportsmen){
         return  next(new ErrorResponse(`Sportsmen not found with id of ${req.params.id}`,404));
     }
+
+    // sportsmen.remove();
 
     res.status(200).json({
         success: true,
