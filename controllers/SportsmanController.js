@@ -6,8 +6,9 @@ const asyncHandler=require('../middleware/async')
 const ErrorResponse=require('../utils/errorResponse')
 
 
-//@desc Create new sportsmen
-//@route POST /general
+//@desc      Read excel file and add 'General' data to database
+//@route     POST /general
+//@access    Private
 exports.postGeneral=asyncHandler(async (req,res,next)=>{
 
         let excelFile = XLSX.readFile(__dirname + '/../uploads/'+req.file.filename, {
@@ -27,12 +28,12 @@ exports.postGeneral=asyncHandler(async (req,res,next)=>{
             success: true,
             data: tableGeneral
         });
-
 });
 
 
-//@desc Create new test for sportsmen
-//@route POST /tests
+//@desc     Read excel file and add 'Tests' data to database
+//@route    POST /tests
+//@access   Private
 exports.postTests=asyncHandler(async (req,res,next)=>{
 
         let excelFile = XLSX.readFile(__dirname + '/../uploads/'+req.file.filename, {
@@ -56,8 +57,9 @@ exports.postTests=asyncHandler(async (req,res,next)=>{
         });
 });
 
-//@desc Create risk factors for sportsmen
-//@route POST /riskFactors
+//@desc     Read excel file and add 'Risk Factors' data to database
+//@route    POST /riskFactors
+//@access   Private
 exports.postRiskFactors=asyncHandler(async (req,res,next)=>{
 
         let excelFile = XLSX.readFile(__dirname + '/../uploads/'+req.file.filename, {
@@ -81,37 +83,28 @@ exports.postRiskFactors=asyncHandler(async (req,res,next)=>{
         });
 });
 
-//@desc Update sportsmen
-//@route PUT /general/:id
-exports.updateGeneral=asyncHandler(async (req,res,next)=>{
 
-    let sportsmen=await Sportsman.findByIdAndUpdate(req.params.id,req.body, {
-        new:true,
-        runValidators:true
-    });
+//@desc     Update sportsmen table
+//@route    PUT /excel/general/:id
+//@access   Private
+exports.updateGeneral=asyncHandler(async (req,res,next)=>{
+    req.body.user=req.user.id;
+
+    let sportsmen=await Sportsman.findById(req.params.id);
 
     if (!sportsmen){
        return  next(new ErrorResponse(`Sportsmen not found with id of ${req.params.id}`,404));
     }
 
-    res.status(200).json({
-        success: true,
-        data: sportsmen
-    });
-
-});
-
-//@desc Delete sportsmen
-//@route DELETE /general/:id
-exports.deleteGeneral=asyncHandler(async (req,res,next)=>{
-
-    let sportsmen=await Sportsman.findByIdAndDelete(req.params.id);    //findById()
-
-    if (!sportsmen){
-        return  next(new ErrorResponse(`Sportsmen not found with id of ${req.params.id}`,404));
+    //Make sure user has role 'admin'
+    if (req.user.role!=='admin'){
+        return next(new ErrorResponse(`User ${req.user.id} is not authorized to update this bootcamp`, 401));
     }
 
-    // sportsmen.remove();
+    sportsmen=await Sportsman.findOneAndUpdate(req.params.id,req.body,{
+        new:true,
+        runValidators:true
+    });
 
     res.status(200).json({
         success: true,
@@ -119,6 +112,7 @@ exports.deleteGeneral=asyncHandler(async (req,res,next)=>{
     });
 
 });
+
 
 
 
