@@ -1,6 +1,7 @@
 const express = require('express')
 const dotenv=require('dotenv')
 const connectDB = require('./config/db');
+const cookieParser=require('cookie-parser')
 const errorHandler=require('./middleware/error')
 
 //Load env vars
@@ -17,6 +18,9 @@ const app = express()
 
 //Body Parser
 app.use(express.json())
+
+//Cookie Parser
+app.use(cookieParser())
 
 //Mount Router
 app.use('/excel',routers)

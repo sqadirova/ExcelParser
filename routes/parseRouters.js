@@ -10,21 +10,22 @@ const {  postGeneral,
     deleteGeneral
 } =require('../controllers/SportsmanController')
 
+const{ protect,authorize }=require('../middleware/auth');
 
 const upload = multer({dest: './uploads/'});
 
 router.route('/general')
-    .post(upload.single("excel"),postGeneral);
+    .post( protect,authorize('publisher','admin'),upload.single("excel"),postGeneral );
 
 router.route('/general/:id')
-.put(updateGeneral)
-    .delete(deleteGeneral);
+.put(protect,authorize('publisher','admin'),updateGeneral)
+    .delete(protect,authorize('publisher','admin'),deleteGeneral);
 
 router.route('/tests')
-    .post(upload.single("excel"),postTests);
+    .post(protect,authorize('publisher','admin'),upload.single("excel"),postTests);
 
 router.route('/riskFactors')
-    .post(upload.single("excel"),postRiskFactors);
+    .post(protect,authorize('publisher','admin'),upload.single("excel"),postRiskFactors);
 
 module.exports=router;
 
