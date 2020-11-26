@@ -10,13 +10,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9351d668-267b-4193-a0b2-d240a5470ce7" name="Default Changelist" comment="-- Added Admin CRUD operations&#10;-- Route changed to /api/v1/.....">
+    <list default="true" id="9351d668-267b-4193-a0b2-d240a5470ce7" name="Default Changelist" comment="-- Added Logout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/AdminController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/AdminController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/AuthController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/AuthController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/authRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/authRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/2d98c035b2b179c75ca8176c1d3070ef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/error.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/error.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/2d98c035b2b179c75ca8176c1d3070ef" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/aecbb0320068f1dc2cb41c7ca6fb6ed5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uploads/df36c6834f1aaf420cb11b04c7598578" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +88,8 @@
       <workItem from="1605943029093" duration="10835000" />
       <workItem from="1606201183946" duration="16263000" />
       <workItem from="1606289525263" duration="11844000" />
-      <workItem from="1606374437855" duration="8698000" />
+      <workItem from="1606374437855" duration="9907000" />
+      <workItem from="1606391934520" duration="2840000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1604995953571</created>
@@ -193,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606380576014</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="-- Added Logout">
+      <created>1606388563436</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1606388563436</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +238,8 @@
     <MESSAGE value="-- Added send email with token for reset password" />
     <MESSAGE value="-- Added update logged in user details and password" />
     <MESSAGE value="-- Added Admin CRUD operations&#10;-- Route changed to /api/v1/....." />
-    <option name="LAST_COMMIT_MESSAGE" value="-- Added Admin CRUD operations&#10;-- Route changed to /api/v1/....." />
+    <MESSAGE value="-- Added Logout" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- Added Logout" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606376794525">
@@ -243,30 +254,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="647" y="310" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1604996786435" />
-    <state width="1515" height="191" key="GridCell.Tab.0.bottom" timestamp="1606388416425">
+    <state width="1515" height="191" key="GridCell.Tab.0.bottom" timestamp="1606394579430">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="191" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606388416425" />
-    <state width="1515" height="191" key="GridCell.Tab.0.center" timestamp="1606388416425">
+    <state width="1515" height="191" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606394579430" />
+    <state width="1515" height="191" key="GridCell.Tab.0.center" timestamp="1606394579429">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="191" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606388416425" />
-    <state width="1515" height="191" key="GridCell.Tab.0.left" timestamp="1606388416424">
+    <state width="1515" height="191" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606394579429" />
+    <state width="1515" height="191" key="GridCell.Tab.0.left" timestamp="1606394579429">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="191" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606388416424" />
-    <state width="1515" height="191" key="GridCell.Tab.0.right" timestamp="1606388416425">
+    <state width="1515" height="191" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606394579429" />
+    <state width="1515" height="191" key="GridCell.Tab.0.right" timestamp="1606394579429">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="191" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606388416425" />
+    <state width="1515" height="191" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606394579429" />
     <state x="583" y="115" key="RollbackChangesDialog" timestamp="1605184266940">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="583" y="115" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605184266940" />
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1606380579888">
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1606388565313">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606380579888" />
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606388565313" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606201359383">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

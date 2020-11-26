@@ -19,7 +19,6 @@ exports.register=asyncHandler(async (req,res,next)=>{
     });
 
     sendTokenResponse(user,200,res);
-
 });
 
 //@desc Login User
@@ -200,14 +199,7 @@ const sendTokenResponse=(user,statusCode,res)=>{
             success:true,
             token
         });
-
 }
-
-
-
-
-
-
 
 
 
