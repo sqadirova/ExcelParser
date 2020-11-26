@@ -5,7 +5,7 @@ const ErrorResponse=require('../utils/errorResponse')
 const sendEmail=require('../utils/sendEmail')
 
 //@desc Register User
-//@route POST /auth/register
+//@route POST /api/v1/auth/register
 //@access Public
 exports.register=asyncHandler(async (req,res,next)=>{
     const {name,email,password,role}=req.body;
@@ -23,7 +23,7 @@ exports.register=asyncHandler(async (req,res,next)=>{
 });
 
 //@desc Login User
-//@route POST /auth/login
+//@route POST /api/v1/auth/login
 //@access Public
 exports.login=asyncHandler(async (req,res,next)=>{
     const {email,password}=req.body;
@@ -50,7 +50,7 @@ exports.login=asyncHandler(async (req,res,next)=>{
 });
 
 //@desc Get current logged in user
-//@route Get /auth/me
+//@route Get /api/v1/auth/me
 //@access Private
 exports.getMe=asyncHandler(async (req,res,next)=>{
     const user=await User.findById(req.user.id);
@@ -62,7 +62,7 @@ exports.getMe=asyncHandler(async (req,res,next)=>{
 });
 
 //@desc Update logged in user details
-//@route PUT /auth/updateDetails
+//@route PUT /api/v1/auth/updateDetails
 //@access Private
 exports.updateDetails=asyncHandler(async (req,res,next)=>{
     const fieldsToUpdate={
@@ -82,7 +82,7 @@ exports.updateDetails=asyncHandler(async (req,res,next)=>{
 });
 
 //@desc Update logged in user password
-//@route PUT /auth/updatePassword
+//@route PUT /api/v1/auth/updatePassword
 //@access Private
 exports.updatePassword=asyncHandler(async (req,res,next)=>{
     const user=await User.findById(req.user.id).select('+password');
@@ -99,7 +99,7 @@ exports.updatePassword=asyncHandler(async (req,res,next)=>{
 
 
 //@desc Forgot Password
-//@route Get /auth/forgotPassword
+//@route POST /api/v1/auth/forgotPassword
 //@access Private
 exports.forgotPassword=asyncHandler(async (req,res,next)=>{
 
@@ -139,7 +139,7 @@ exports.forgotPassword=asyncHandler(async (req,res,next)=>{
 });
 
 //@desc Reset password
-//@route Get /auth/resetPassword/:resetToken
+//@route PUT /api/v1/auth/resetPassword/:resetToken
 //@access Public
 exports.resetPassword=asyncHandler(async (req,res,next)=>{
     //Get hashed token

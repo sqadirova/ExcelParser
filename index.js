@@ -11,8 +11,9 @@ dotenv.config({path:'./config/config.env'});
 connectDB();
 
 //Route files
-const routers=require('./routes/parseRouters')
-const auth=require('./routes/authRouter')
+const routers=require('./routes/parseRouters');
+const auth=require('./routes/authRouter');
+const admin=require('./routes/adminRouter');
 
 const app = express()
 
@@ -23,8 +24,9 @@ app.use(express.json())
 app.use(cookieParser())
 
 //Mount Router
-app.use('/excel',routers)
-app.use('/auth',auth)
+app.use('/api/v1/excel',routers)
+app.use('/api/v1/auth',auth)
+app.use('/api/v1/users',admin)
 
 //error handler
 // app.use(function (err, req, res, next) {

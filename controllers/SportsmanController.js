@@ -7,7 +7,7 @@ const ErrorResponse=require('../utils/errorResponse')
 
 
 //@desc      Read excel file and add 'General' data to database
-//@route     POST /general
+//@route     POST /api/v1/excel/general
 //@access    Private
 exports.postGeneral=asyncHandler(async (req,res,next)=>{
 
@@ -32,7 +32,7 @@ exports.postGeneral=asyncHandler(async (req,res,next)=>{
 
 
 //@desc     Read excel file and add 'Tests' data to database
-//@route    POST /tests
+//@route    POST /api/v1/excel/tests
 //@access   Private
 exports.postTests=asyncHandler(async (req,res,next)=>{
 
@@ -58,7 +58,7 @@ exports.postTests=asyncHandler(async (req,res,next)=>{
 });
 
 //@desc     Read excel file and add 'Risk Factors' data to database
-//@route    POST /riskFactors
+//@route    POST /api/v1/excel/riskFactors
 //@access   Private
 exports.postRiskFactors=asyncHandler(async (req,res,next)=>{
 
@@ -85,7 +85,7 @@ exports.postRiskFactors=asyncHandler(async (req,res,next)=>{
 
 
 //@desc     Update sportsmen table
-//@route    PUT /excel/general/:id
+//@route    PUT /api/v1/excel/general/:id
 //@access   Private
 exports.updateGeneral=asyncHandler(async (req,res,next)=>{
     req.body.user=req.user.id;
