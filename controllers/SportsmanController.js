@@ -87,9 +87,7 @@ exports.postRiskFactors=asyncHandler(async (req,res,next)=>{
 //@desc     Update sportsmen table
 //@route    PUT /api/v1/excel/general/:id
 //@access   Private
-exports.updateGeneral=asyncHandler(async (req,res,next)=>{
-    req.body.user=req.user.id;
-
+exports.updateSportsmen=asyncHandler(async (req,res,next)=>{
     let sportsmen=await Sportsman.findById(req.params.id);
 
     if (!sportsmen){
@@ -98,7 +96,7 @@ exports.updateGeneral=asyncHandler(async (req,res,next)=>{
 
     //Make sure user has role 'admin'
     if (req.user.role!=='admin'){
-        return next(new ErrorResponse(`User ${req.user.id} is not authorized to update this bootcamp`, 401));
+        return next(new ErrorResponse(`User ${req.user.id} is not authorized to update this data`, 401));
     }
 
     sportsmen=await Sportsman.findOneAndUpdate(req.params.id,req.body,{
@@ -113,6 +111,23 @@ exports.updateGeneral=asyncHandler(async (req,res,next)=>{
 
 });
 
+//@desc     Add sportsmen to General
+//@route    POST /api/v1/excel/general/addSportsmen
+//@access   Private
+exports.addSportsmen=asyncHandler(async (req,res,next)=>{
+    let sportsmen=await Sportsman.create(req.body);
+
+    //Make sure user has role 'admin'
+    if (req.user.role!=='admin'){
+        return next(new ErrorResponse(`User ${req.user.id} is not authorized to create data`, 401));
+    }
+
+    res.status(200).json({
+        success: true,
+        data: sportsmen
+    });
+
+});
 
 
 
